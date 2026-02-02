@@ -1,0 +1,61 @@
+# RL GridWorld: Value Iteration vs Q-Learning
+
+> Model-Based Planning vs Model-Free Learning in a 5×5 Environment
+
+![Value Iteration Policy](results/vi_policy.png)
+*Optimal policy computed offline using full MDP knowledge (Value Iteration)*
+
+![Q-Learning Policy](results/ql_policy.png)
+*Policy learned through environment interaction without MDP knowledge (Q-Learning)*
+
+---
+
+## Execute Experiments
+
+```bash
+12345
+# Run Value Iteration
+python experiments/run_value_iteration.py
+
+# Run Q-Learning
+python experiments/run_q_learning.py
+```
+
+## Output Files
+All visualizations saved to `results/` directory:
+
+```plaintext
+results/
+├── vi_values.png          # Value function heatmap
+├── vi_policy.png          # Optimal policy arrows
+├── ql_policy.png          # Learned policy arrows
+└── ql_learning_curve.png  # Convergence plot```
+```
+## Value Iteration Results
+
+### Value Function Heatmap
+![Value Function Heatmap](experiments/results/vi_values.png)
+
+### Optimal Policy
+![Optimal Policy](experiments/results/vi_policy.png)
+
+## Q-Learning Results
+
+### Learned Policy
+![Q-Learning Policy](experiments/results/ql_policy.png)
+
+### Learning Curve
+![Q-Learning Learning Curve](experiments/results/ql_learning_curve.png)
+
+## Project Structure 
+12345678910111213141516171819 
+rl-gridworld/
+├── README.md               # This file 
+├── requirements.txt 
+├── src/
+│   ├── grid_environment.py # Custom 5x5 grid with unique boundaries 
+│   ├── value_iteration.py  # Model-based planning 
+│   └── q_learning.py       # Model-free learning 
+├── experiments/
+│   ├── run_value_iteration.py 
+│   └── run_q_learning.py
