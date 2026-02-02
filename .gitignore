@@ -6,7 +6,7 @@ __pycache__/
 venv/
 env/
 *.npy
-*.png
+#*.png
 .vscode/
 .idea/
 .DS_Store
