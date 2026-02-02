@@ -3,9 +3,11 @@
 > Model-Based Planning vs Model-Free Learning in a 5×5 Environment
 
 ![Value Iteration Policy](experiments/results/vi_policy.png)
+
 *Optimal policy computed offline using full MDP knowledge (Value Iteration)*
 
 ![Q-Learning Policy](experiments/results/ql_policy.png)
+
 *Policy learned through environment interaction without MDP knowledge (Q-Learning)*
 
 ---
@@ -35,13 +37,11 @@ results/
 ### Value Function Heatmap
 ![Value Function Heatmap](experiments/results/vi_values.png)
 
-### Optimal Policy
-![Optimal Policy](experiments/results/vi_policy.png)
+
 
 ## Q-Learning Results
 
-### Learned Policy
-![Q-Learning Policy](experiments/results/ql_policy.png)
+
 
 ### Learning Curve
 ![Q-Learning Learning Curve](experiments/results/ql_learning_curve.png)
