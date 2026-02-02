@@ -12,6 +12,19 @@
 
 ---
 
+##  Environment Specification
+- **Grid Size**: 5×5 deterministic gridworld
+- **Goal State**: `(4, 4)` with **+10 reward** (terminal)
+- **Step Penalty**: -0.1 per action
+- **Actions**: 4-directional movement (↑, →, ↓, ←)
+- **Transition Dynamics**: 
+  - Valid moves: Deterministic state transition
+  - **Invalid moves**: Agent *stays in place* (0 reward)
+- **Discount Factor**: γ = 0.9
+
+---
+---
+
 ## Execute Experiments
 
 ```bash
